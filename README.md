@@ -2,7 +2,7 @@ Desafio de Movimentos de Xadrez - C ♟️💻
 
 Este repositório contém a implementação de um projeto de xadrez em C, desenvolvido como parte de um desafio de programação. O projeto simula os movimentos de várias peças de xadrez em um tabuleiro. O desafio foi dividido em três níveis, cada um com um grau crescente de complexidade. A seguir, você encontrará uma explicação de cada nível e como testar os movimentos das peças. 🚀
 
-Níveis do Desafio
+Níveis do Desafio🟢🟡🔴
 
 🟢 Nível Novato 👶
 Neste nível, você irá simular o movimento das peças Torre, Bispo e Rainha usando estruturas de repetição (loops). O objetivo é aplicar o conhecimento básico sobre o uso de loops como for, while e do-while para controlar o movimento das peças. ⚙️
@@ -107,9 +107,11 @@ Cima ⬆️
 Direita ➡️
 
 🖥️ Tecnologias Utilizadas 💡
+
 Linguagem: C
 
 Compilador: GCC 🚀
 
 ⚠️ Nota Importante 📢
+
 Professor, fique à vontade para me orientar em pontos negativos ou melhorias no código. Qualquer sugestão para aprimorar a implementação será muito bem-vinda. Agradeço pelo acompanhamento e feedback! 🙏
