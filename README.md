@@ -1,75 +1,117 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+Desafio de Movimentos de Xadrez - C ♟️💻
 
-# Desafio de Xadrez - MateCheck
+Este repositório contém a implementação de um projeto de xadrez em C, desenvolvido como parte de um desafio de programação. O projeto simula os movimentos de várias peças de xadrez em um tabuleiro. O desafio foi dividido em três níveis, cada um com um grau crescente de complexidade. A seguir, você encontrará uma explicação de cada nível e como testar os movimentos das peças. 🚀
 
-Bem-vindo ao desafio de Xadrez da MateCheck! Este projeto tem como objetivo testar e determinar os limites de utilização do código dentro do jogo utilizando estruturas de repetição e funções avançadas.
+Níveis do Desafio🟢🟡🔴
 
-## Níveis do Desafio
+🟢 Nível Novato 👶
+Neste nível, você irá simular o movimento das peças Torre, Bispo e Rainha usando estruturas de repetição (loops). O objetivo é aplicar o conhecimento básico sobre o uso de loops como for, while e do-while para controlar o movimento das peças. ⚙️
 
-### 🏅 Nível Novato
+O que foi feito:
+Torre: Move-se 5 casas para a direita ➡️.
 
-A equipe de testes da MateCheck recebeu uma solicitação para determinar os limites de utilização do código dentro do jogo. Para isso, a equipe de programação solicitou o envio de blocos de código contendo loops (estruturas de repetição) para avaliação de desempenho e possibilidades de aplicação.
+Bispo: Move-se 5 casas na diagonal (cima, direita) ↗️.
 
-**Movimentação das Peças:**
-- Bispo: 5 casas na diagonal superior direita
-- Torre: 5 casas para a direita
-- Rainha: 8 casas para a esquerda
+Rainha: Move-se 8 casas para a esquerda ⬅️.
 
-No jogo, apenas possuímos movimentação para quatro direções, mas o Bispo se mexe na diagonal. Com isso, foi adicionada uma condição para movimentação dessa peça, em que, para movê-lo, utilizamos o comando `printf` e, em seu valor, colocamos a direção usando a combinação de direções básicas. 
+Como testar:
+Compile o código:
+gcc xadrez.c -o xadrez
 
-**Requisitos Funcionais:**
-1. **Entrada de Dados:**
-   - Os valores necessários devem ser inseridos manualmente a partir de variáveis dentro do código.
-   - Será permitido o uso de constantes para facilitar a escrita do código e evitar repetição de valores.
-2. **Estruturas de Repetição:**
-   - Os códigos precisam ser desenvolvidos utilizando estruturas de repetição.
-3. **Saída de Dados:**
-   - O sistema deve exibir os resultados de cada procedimento de forma clara e legível.
+Execute o programa:
+./xadrez
 
-**Requisitos Não Funcionais:**
-1. **Performance:**
-   - O sistema deve executar os cálculos e apresentar os resultados sem atrasos perceptíveis.
-2. **Documentação:**
-   - O código deve ser bem documentado, incluindo comentários detalhados sobre a função de cada parte do código.
-3. **Manutenibilidade:**
-   - O código deve ser escrito de forma clara, empregando nomes de variáveis que permitam o fácil entendimento.
+Você verá a impressão dos movimentos das peças na tela: Movimento da Torre: Direita ➡️
+Direita ➡️
+Direita ➡️
+Direita ➡️
+Direita ➡️
 
-**Instruções Detalhadas:**
-1. **Entrada de Dados:**
-   - Inclua a biblioteca padrão de entrada e saída no início do seu programa.
-   - Declare variáveis constantes para definir os valores a serem comparados dentro das estruturas condicionais.
-2. **Estruturas de Repetição:**
-   - Utilize cada uma das diferentes estruturas de repetição apresentadas.
-3. **Saída:**
-   - As saídas deverão ser mostradas de forma clara e organizada, com a direção da peça.
+Movimento do Bispo:
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
 
-**Nomenclatura:**
+Movimento da Rainha:
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
 
-printf("Cima\n");
-printf("Baixo\n");
-printf("Esquerda\n");
-printf("Direita\n");
+🟡 Nível Aventureiro 🏰
+Neste nível, você aprimorará o movimento das peças, adicionando o Cavalo ao jogo 🐴. O Cavalo se move em "L", e a implementação exige o uso de loops aninhados para simular esse movimento. 🔄
 
-### 🏅 Nível Aventureiro
-Agora que já conseguimos mover as peças mais simples usando loops, os desenvolvedores pediram para elaborar os loops de outra forma. Para o desafio, moveremos o cavalo, que possui sua movimentação em L. O cavalo deve se movimentar para baixo e para a esquerda, usando pelo menos duas estruturas de repetição: uma deve ser for e a outra pode ser while ou do-while.
+O que foi feito:
+Cavalo: Move-se 2 casas para baixo e 1 para a esquerda (movimento em "L").
 
-**Movimentação do Cavalo:**
+Como testar:
+Compile o código:
+gcc xadrez.c -o xadrez
 
-Mover o cavalo em L utilizando loops aninhados.
-Obs: É obrigatório o uso de loops aninhados.
+Execute o programa:
+./xadrez
 
-### 🥇 Nível Mestre
-Para o desafio final, as peças que utilizam loops simples terão seus códigos trocados por **funções recursivas**, e a movimentação do cavalo utilizará loops com variáveis múltiplas e/ou condições múltiplas, permitindo o uso de continue e break.
+Você verá a impressão dos movimentos das peças, incluindo o movimento do Cavalo: Movimento do Cavalo:
+Baixo ⬇️
+Baixo ⬇️
+Esquerda ⬅️
 
-**Movimentação das Peças:**
+🔴 Nível Mestre 🏆
+No nível mestre, você aplica recursividade e loops complexos para controlar o movimento das peças. A recursividade é usada para a Torre, Bispo e Rainha, enquanto o movimento do Cavalo é aprimorado com loops aninhados complexos. 🧠💥
 
-**Bispo**: 5 casas na diagonal direita para cima
-**Torre**: 5 casas para a direita
-**Rainha**: 8 casas para a esquerda
-**Cavalo**: 1 vez em L para cima à direita
-Obs: É obrigatório o uso de loops aninhados na movimentação do bispo e funções recursivas.
+O que foi feito:
+Recursividade: As funções que controlam os movimentos da Torre, Bispo e Rainha foram modificadas para usar recursão 🔁.
 
-Ao concluir este desafio, você terá um conhecimento mais profundo de estruturas complexas e elaboradas, amplamente utilizadas no mercado de trabalho. Boa sorte e boa programação!
+Loops Complexos: O movimento do Cavalo foi aprimorado com loops aninhados e múltiplas condições 🔄.
 
-Equipe de Ensino - MateCheck
+Como testar:
+Compile o código:
+gcc xadrez.c -o xadrez
+
+Execute o programa:
+./xadrez
+
+Você verá a impressão dos movimentos das peças, incluindo o movimento aprimorado do Cavalo com loops complexos: Movimento da Torre:
+Direita ➡️
+Direita ➡️
+Direita ➡️
+Direita ➡️
+Direita ➡️
+
+Movimento do Bispo:
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
+Cima Direita ↗️
+
+Movimento da Rainha:
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+Esquerda ⬅️
+
+Movimento do Cavalo:
+Cima ⬆️
+Cima ⬆️
+Direita ➡️
+
+🖥️ Tecnologias Utilizadas 💡
+
+Linguagem: C
+
+Compilador: GCC 🚀
+
+⚠️ Nota Importante 📢
+
+Professor, fique à vontade para me orientar em pontos negativos ou melhorias no código. Qualquer sugestão para aprimorar a implementação será muito bem-vinda. Agradeço pelo acompanhamento e feedback! 🙏
